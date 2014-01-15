@@ -8,6 +8,8 @@ Source0:	http://pypi.python.org/packages/source/h/httpie/%{name}-%{version}.tar.
 # Source0-md5:	09218336048596da757c4f0cf19642fd
 URL:		http://httpie.org/
 BuildRequires:	python-devel
+BuildRequires:	python-distribute
+BuildRequires:	rpm-pythonprov
 BuildRequires:	sed >= 4.0
 # Needed so we can build the manpage with help2man without fataling.
 BuildRequires:	help2man
