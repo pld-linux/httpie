@@ -1,7 +1,7 @@
 Summary:	A Curl-like tool for humans
 Name:		httpie
 Version:	0.7.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Applications/Networking
 Source0:	http://pypi.python.org/packages/source/h/httpie/%{name}-%{version}.tar.gz
