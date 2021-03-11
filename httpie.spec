@@ -40,15 +40,11 @@ sed -i 's/Pygments>=1.5/Pygments>=1.1/' setup.py
 sed -i 's/requests>=2.0.0/requests>=1.1.0/' setup.py
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
-
+%py_install
 %py_postclean
 
 export PYTHONPATH=$RPM_BUILD_ROOT%{py_sitescriptdir}
